@@ -8,43 +8,46 @@
 import SwiftUI
 
 struct TapPane: View {
+    @State var count: Int
     var color: Color
     var body: some View {
-        ZStack {
-//            VStack {
-//                Spacer()
-//                    .onTapGesture {
-//                        print("hello")
-//                    }
-//                Divider()
-//                Spacer()
-//                    .onTapGesture {
-//                        print("hello")
-//                    }
-//            }
-            VStack {
-                TextField("Category", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                    .multilineTextAlignment(.center)
-                    .padding(5)
-                    .foregroundColor(color)
-
-                Spacer()
-                Text(String(count))
-                    .padding()
-                    .foregroundColor(color)
-                    .font(.largeTitle)
-
-                Spacer()
+        VStack {
+            TextField("Category", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                .multilineTextAlignment(.center)
+                .padding(5)
+                .foregroundColor(color)
+            ZStack {
+                VStack {
+                    Text(String(count))
+                        .padding()
+                        .foregroundColor(color)
+                        .font(.largeTitle)
+                }
+                VStack {
+                    VStack {}
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        count += 1
+                    }
+                    VStack {}
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        if count > 0 {
+                            count -= 1
+                        }
+                    }
+                }
             }
+            
+            
         }
-        
-        
     }
-    var count: Int
 }
 
 struct TapPane_Previews: PreviewProvider {
     static var previews: some View {
-        TapPane(color: .red, count: 0)
+        TapPane(count: 0, color: .red)
     }
 }

@@ -14,27 +14,28 @@ struct TapView: View {
                 HStack {
                     Group {
                         TapPane(
-                            color: .blue,
-                            count: 0
+                            count: 0,
+                            color: .blue
                         )
                     }.frame(maxWidth: .infinity, maxHeight: .infinity)
                     Group {
                         TapPane(
-                            color: .green,
-                            count: 5
+                            count: 0,
+                            color: .green
                         )
                     }.frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
                 HStack {
                     Group {
-                        TapPane(                            color: .yellow,
-                            count: 8
+                        TapPane(
+                            count: 0,
+                            color: .yellow
                         )
                     }.frame(maxWidth: .infinity, maxHeight: .infinity)
                     Group {
                         TapPane(
-                            color: .red,
-                            count: 3
+                            count: 0,
+                            color: .red
                         )
                     }.frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
