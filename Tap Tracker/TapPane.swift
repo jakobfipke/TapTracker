@@ -16,13 +16,9 @@ struct TapPane: View {
                 .multilineTextAlignment(.center)
                 .padding(5)
                 .foregroundColor(color)
+                .font(Font.title2.bold())
             ZStack {
-                VStack {
-                    Text(String(count))
-                        .padding()
-                        .foregroundColor(color)
-                        .font(.largeTitle)
-                }
+                
                 VStack {
                     VStack {}
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -39,10 +35,26 @@ struct TapPane: View {
                         }
                     }
                 }
+                VStack {
+                    Text(String(count))
+                        .padding()
+                        .foregroundColor(color)
+                        .font(.largeTitle)
+                }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.black, lineWidth: 2)
+                        .background(color)
+                        .opacity(0.01)
+                )
             }
             
             
-        }
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .contentShape(Rectangle())
+
+            
+            
     }
 }
 

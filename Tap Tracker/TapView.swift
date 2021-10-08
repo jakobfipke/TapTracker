@@ -12,34 +12,26 @@ struct TapView: View {
         Group {
             VStack {
                 HStack {
-                    Group {
-                        TapPane(
-                            count: 0,
-                            color: .blue
-                        )
-                    }.frame(maxWidth: .infinity, maxHeight: .infinity)
-                    Group {
-                        TapPane(
-                            count: 0,
-                            color: .green
-                        )
-                    }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                    TapPane(
+                        count: 0,
+                        color: .blue
+                    )
+                    TapPane(
+                        count: 0,
+                        color: .green
+                    )
                 }
                 HStack {
-                    Group {
-                        TapPane(
-                            count: 0,
-                            color: .yellow
-                        )
-                    }.frame(maxWidth: .infinity, maxHeight: .infinity)
-                    Group {
-                        TapPane(
-                            count: 0,
-                            color: .red
-                        )
-                    }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                    TapPane(
+                        count: 0,
+                        color: .yellow
+                    )
+                    TapPane(
+                        count: 0,
+                        color: .red
+                    )
                 }
-            }
+            }.padding(8)
         }
     }
 }
