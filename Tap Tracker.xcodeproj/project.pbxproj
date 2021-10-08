@@ -11,6 +11,10 @@
 		6099F5B427078EA500673EBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099F5B327078EA500673EBD /* ContentView.swift */; };
 		6099F5B627078EA700673EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6099F5B527078EA700673EBD /* Assets.xcassets */; };
 		6099F5B927078EA700673EBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6099F5B827078EA700673EBD /* Preview Assets.xcassets */; };
+		60AAF4B12710D31300AD6A03 /* SessionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AAF4B02710D31300AD6A03 /* SessionsView.swift */; };
+		60AAF4B32710D32000AD6A03 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AAF4B22710D32000AD6A03 /* GraphView.swift */; };
+		60AAF4B72710D46700AD6A03 /* TapPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AAF4B62710D46700AD6A03 /* TapPane.swift */; };
+		60AAF4B92710D4CD00AD6A03 /* TapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AAF4B82710D4CD00AD6A03 /* TapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		6099F5B327078EA500673EBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6099F5B527078EA700673EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6099F5B827078EA700673EBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		60AAF4B02710D31300AD6A03 /* SessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsView.swift; sourceTree = "<group>"; };
+		60AAF4B22710D32000AD6A03 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		60AAF4B62710D46700AD6A03 /* TapPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapPane.swift; sourceTree = "<group>"; };
+		60AAF4B82710D4CD00AD6A03 /* TapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +59,14 @@
 		6099F5B027078EA500673EBD /* Tap Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				60AAF4B62710D46700AD6A03 /* TapPane.swift */,
+				60AAF4B82710D4CD00AD6A03 /* TapView.swift */,
 				6099F5B127078EA500673EBD /* Tap_TrackerApp.swift */,
 				6099F5B327078EA500673EBD /* ContentView.swift */,
 				6099F5B527078EA700673EBD /* Assets.xcassets */,
 				6099F5B727078EA700673EBD /* Preview Content */,
+				60AAF4B02710D31300AD6A03 /* SessionsView.swift */,
+				60AAF4B22710D32000AD6A03 /* GraphView.swift */,
 			);
 			path = "Tap Tracker";
 			sourceTree = "<group>";
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60AAF4B72710D46700AD6A03 /* TapPane.swift in Sources */,
 				6099F5B427078EA500673EBD /* ContentView.swift in Sources */,
+				60AAF4B12710D31300AD6A03 /* SessionsView.swift in Sources */,
 				6099F5B227078EA500673EBD /* Tap_TrackerApp.swift in Sources */,
+				60AAF4B32710D32000AD6A03 /* GraphView.swift in Sources */,
+				60AAF4B92710D4CD00AD6A03 /* TapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

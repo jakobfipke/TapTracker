@@ -7,10 +7,30 @@
 
 import SwiftUI
 
+
+
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            SessionsView()
+            .tabItem {
+                Image(systemName: "list.bullet.rectangle")
+                Text("Sessions")
+            }
+            // Tap View
+            TapView()
+            .tabItem {
+                Image(systemName: "hand.tap")
+                Text("Tap")
+            }
+            GraphView()
+            .tabItem {
+                Image(systemName: "chart.bar.xaxis")
+                Text("Graph")
+            }
+            
+        }
     }
 }
 
