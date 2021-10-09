@@ -7,15 +7,10 @@
 
 import SwiftUI
 
-let sessions = [
-    thisSession
-]
-
 struct SessionsView: View {
     var body: some View {
         NavigationView {
             List {
-                
                 ForEach(sessions, id: \.id, content: {
                     session in
                     NavigationLink(
@@ -24,8 +19,6 @@ struct SessionsView: View {
                         Text(session.name)
                     }
                 })
-                
-
             }.navigationTitle("Sessions")
         }
     }
