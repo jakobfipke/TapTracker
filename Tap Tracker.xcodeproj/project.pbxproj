@@ -17,6 +17,9 @@
 		60AAF4B92710D4CD00AD6A03 /* TapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AAF4B82710D4CD00AD6A03 /* TapView.swift */; };
 		60AAF4BB2710EF1400AD6A03 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AAF4BA2710EF1400AD6A03 /* Session.swift */; };
 		60AAF4BD2710EFA100AD6A03 /* SessionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AAF4BC2710EFA100AD6A03 /* SessionCard.swift */; };
+		7250A9082710FA6D004C90D5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250A9072710FA6D004C90D5 /* Category.swift */; };
+		7250A90F27112ECF004C90D5 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250A90E27112ECF004C90D5 /* CategoryData.swift */; };
+		7250A91127112EDD004C90D5 /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250A91027112EDD004C90D5 /* SessionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		60AAF4B82710D4CD00AD6A03 /* TapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapView.swift; sourceTree = "<group>"; };
 		60AAF4BA2710EF1400AD6A03 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		60AAF4BC2710EFA100AD6A03 /* SessionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCard.swift; sourceTree = "<group>"; };
+		7250A9072710FA6D004C90D5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		7250A90E27112ECF004C90D5 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
+		7250A91027112EDD004C90D5 /* SessionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,16 +69,13 @@
 		6099F5B027078EA500673EBD /* Tap Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				60AAF4B62710D46700AD6A03 /* TapPane.swift */,
-				60AAF4B82710D4CD00AD6A03 /* TapView.swift */,
-				6099F5B127078EA500673EBD /* Tap_TrackerApp.swift */,
-				6099F5B327078EA500673EBD /* ContentView.swift */,
+				7250A90D27112EAA004C90D5 /* Struct */,
+				7250A90C27112E62004C90D5 /* Component */,
+				7250A90927112E14004C90D5 /* Data */,
+				7250A90A27112E1D004C90D5 /* View */,
+				7250A90B27112E24004C90D5 /* Main */,
 				6099F5B527078EA700673EBD /* Assets.xcassets */,
 				6099F5B727078EA700673EBD /* Preview Content */,
-				60AAF4B02710D31300AD6A03 /* SessionsView.swift */,
-				60AAF4B22710D32000AD6A03 /* GraphView.swift */,
-				60AAF4BA2710EF1400AD6A03 /* Session.swift */,
-				60AAF4BC2710EFA100AD6A03 /* SessionCard.swift */,
 			);
 			path = "Tap Tracker";
 			sourceTree = "<group>";
@@ -83,6 +86,52 @@
 				6099F5B827078EA700673EBD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7250A90927112E14004C90D5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7250A90E27112ECF004C90D5 /* CategoryData.swift */,
+				7250A91027112EDD004C90D5 /* SessionData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7250A90A27112E1D004C90D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60AAF4B22710D32000AD6A03 /* GraphView.swift */,
+				60AAF4B02710D31300AD6A03 /* SessionsView.swift */,
+				60AAF4B82710D4CD00AD6A03 /* TapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7250A90B27112E24004C90D5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6099F5B327078EA500673EBD /* ContentView.swift */,
+				6099F5B127078EA500673EBD /* Tap_TrackerApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7250A90C27112E62004C90D5 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				60AAF4BC2710EFA100AD6A03 /* SessionCard.swift */,
+				60AAF4B62710D46700AD6A03 /* TapPane.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		7250A90D27112EAA004C90D5 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				7250A9072710FA6D004C90D5 /* Category.swift */,
+				60AAF4BA2710EF1400AD6A03 /* Session.swift */,
+			);
+			path = Struct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,11 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7250A91127112EDD004C90D5 /* SessionData.swift in Sources */,
 				60AAF4BB2710EF1400AD6A03 /* Session.swift in Sources */,
+				7250A90F27112ECF004C90D5 /* CategoryData.swift in Sources */,
 				60AAF4B72710D46700AD6A03 /* TapPane.swift in Sources */,
 				60AAF4BD2710EFA100AD6A03 /* SessionCard.swift in Sources */,
 				6099F5B427078EA500673EBD /* ContentView.swift in Sources */,
 				60AAF4B12710D31300AD6A03 /* SessionsView.swift in Sources */,
+				7250A9082710FA6D004C90D5 /* Category.swift in Sources */,
 				6099F5B227078EA500673EBD /* Tap_TrackerApp.swift in Sources */,
 				60AAF4B32710D32000AD6A03 /* GraphView.swift in Sources */,
 				60AAF4B92710D4CD00AD6A03 /* TapView.swift in Sources */,
