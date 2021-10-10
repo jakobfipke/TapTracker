@@ -14,9 +14,15 @@ struct SessionsView: View {
                 ForEach(sessions, id: \.id, content: {
                     session in
                     NavigationLink(
-                        destination: Text(session.name)
+                        destination: SessionCard(session: session)
                     ) {
                         Text(session.name)
+                        if (session.isRunning == true) {
+                            Spacer()
+                            Image(systemName: "play.circle.fill")
+                                .foregroundColor(Color.blue)
+                                .padding(.trailing, 20.0)
+                        }
                     }
                 })
             }.navigationTitle("Sessions")
