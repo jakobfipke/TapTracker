@@ -14,5 +14,5 @@ struct Session {
     var date: Date
     var location: String
     var isRunning: Bool
-    var categories: Array<String>
+    var categories: Array<Category>
 }
