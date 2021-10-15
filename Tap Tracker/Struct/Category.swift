@@ -9,5 +9,5 @@ import Foundation
 
 struct Category {
     var CategoryTitle: String
-    var Count: Int = 0
+    var Count: Int
 }
