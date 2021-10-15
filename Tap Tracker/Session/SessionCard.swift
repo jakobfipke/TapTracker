@@ -72,7 +72,6 @@ struct SessionCard: View {
                     }
                 }
             }
-            Spacer()
         }
     }
 }
