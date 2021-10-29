@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		605C1ED2272C9FBB0088544D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 605C1ED1272C9FBB0088544D /* GoogleService-Info.plist */; };
+		605C1ED5272CA3520088544D /* SessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C1ED4272CA3520088544D /* SessionRepository.swift */; };
 		6099F5B227078EA500673EBD /* Tap_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099F5B127078EA500673EBD /* Tap_TrackerApp.swift */; };
 		6099F5B427078EA500673EBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099F5B327078EA500673EBD /* ContentView.swift */; };
 		6099F5B627078EA700673EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6099F5B527078EA700673EBD /* Assets.xcassets */; };
@@ -21,9 +23,14 @@
 		7250A90F27112ECF004C90D5 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250A90E27112ECF004C90D5 /* CategoryData.swift */; };
 		7250A91127112EDD004C90D5 /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250A91027112EDD004C90D5 /* SessionData.swift */; };
 		72F4F5312712808F00006E17 /* CategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F4F5302712808F00006E17 /* CategoryCard.swift */; };
+		B6D36A44F080CC40C95B074E /* Pods_Tap_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D41F96CCAC9BF81EC83B18 /* Pods_Tap_Tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25D2BA6F6812221E3F86C5B0 /* Pods-Tap Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Tracker.release.xcconfig"; path = "Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		36D41F96CCAC9BF81EC83B18 /* Pods_Tap_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tap_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		605C1ED1272C9FBB0088544D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		605C1ED4272CA3520088544D /* SessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRepository.swift; sourceTree = "<group>"; };
 		6099F5AE27078EA500673EBD /* Tap Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6099F5B127078EA500673EBD /* Tap_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_TrackerApp.swift; sourceTree = "<group>"; };
 		6099F5B327078EA500673EBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +42,7 @@
 		60AAF4B82710D4CD00AD6A03 /* TapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapView.swift; sourceTree = "<group>"; };
 		60AAF4BA2710EF1400AD6A03 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		60AAF4BC2710EFA100AD6A03 /* SessionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCard.swift; sourceTree = "<group>"; };
+		66F989B43325E80973A433BE /* Pods-Tap Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		7250A9072710FA6D004C90D5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7250A90E27112ECF004C90D5 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
 		7250A91027112EDD004C90D5 /* SessionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionData.swift; sourceTree = "<group>"; };
@@ -46,17 +54,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D36A44F080CC40C95B074E /* Pods_Tap_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		605C1ED3272CA33A0088544D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				605C1ED4272CA3520088544D /* SessionRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		6099F5A527078EA500673EBD = {
 			isa = PBXGroup;
 			children = (
 				6099F5B027078EA500673EBD /* Tap Tracker */,
 				6099F5AF27078EA500673EBD /* Products */,
+				B75A06C9ED7C2FFD9DF16143 /* Pods */,
+				CE19B6B248CAB15B52B9BEB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +90,8 @@
 		6099F5B027078EA500673EBD /* Tap Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				605C1ED3272CA33A0088544D /* Repository */,
+				605C1ED1272C9FBB0088544D /* GoogleService-Info.plist */,
 				72F4F5372712AA6C00006E17 /* Tap */,
 				72F4F5362712AA6600006E17 /* Session */,
 				7250A90D27112EAA004C90D5 /* Struct */,
@@ -145,6 +166,23 @@
 			path = Tap;
 			sourceTree = "<group>";
 		};
+		B75A06C9ED7C2FFD9DF16143 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66F989B43325E80973A433BE /* Pods-Tap Tracker.debug.xcconfig */,
+				25D2BA6F6812221E3F86C5B0 /* Pods-Tap Tracker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE19B6B248CAB15B52B9BEB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36D41F96CCAC9BF81EC83B18 /* Pods_Tap_Tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6099F5BC27078EA700673EBD /* Build configuration list for PBXNativeTarget "Tap Tracker" */;
 			buildPhases = (
+				71CB7FC80EEBFD8049E143F0 /* [CP] Check Pods Manifest.lock */,
 				6099F5AA27078EA500673EBD /* Sources */,
 				6099F5AB27078EA500673EBD /* Frameworks */,
 				6099F5AC27078EA500673EBD /* Resources */,
+				AD5308D83A28F8ED3D5FD134 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,10 +245,53 @@
 			files = (
 				6099F5B927078EA700673EBD /* Preview Assets.xcassets in Resources */,
 				6099F5B627078EA700673EBD /* Assets.xcassets in Resources */,
+				605C1ED2272C9FBB0088544D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71CB7FC80EEBFD8049E143F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tap Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD5308D83A28F8ED3D5FD134 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6099F5AA27078EA500673EBD /* Sources */ = {
@@ -216,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7250A91127112EDD004C90D5 /* SessionData.swift in Sources */,
+				605C1ED5272CA3520088544D /* SessionRepository.swift in Sources */,
 				60AAF4BB2710EF1400AD6A03 /* Session.swift in Sources */,
 				7250A90F27112ECF004C90D5 /* CategoryData.swift in Sources */,
 				60AAF4B72710D46700AD6A03 /* TapPane.swift in Sources */,
@@ -351,6 +435,7 @@
 		};
 		6099F5BD27078EA700673EBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F989B43325E80973A433BE /* Pods-Tap Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -380,6 +465,7 @@
 		};
 		6099F5BE27078EA700673EBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25D2BA6F6812221E3F86C5B0 /* Pods-Tap Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
