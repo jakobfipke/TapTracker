@@ -22,13 +22,10 @@
 		7250A91127112EDD004C90D5 /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250A91027112EDD004C90D5 /* SessionData.swift */; };
 		72F4F5312712808F00006E17 /* CategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F4F5302712808F00006E17 /* CategoryCard.swift */; };
 		72FE360A272CA76800B7E267 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72FE3609272CA76800B7E267 /* GoogleService-Info.plist */; };
-		C7FF41F550D26846D5113297 /* Pods_Tap_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B69C225550EF37A1A1FB513 /* Pods_Tap_Tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1EAB55D63F33AE749DD6D236 /* Pods-Tap Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker.debug.xcconfig"; sourceTree = "<group>"; };
-		3FBF93B2423EB2D5703F5B52 /* Pods-Tap Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Tracker.release.xcconfig"; path = "Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker.release.xcconfig"; sourceTree = "<group>"; };
-		5B69C225550EF37A1A1FB513 /* Pods_Tap_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tap_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5638B77A004FBE19CB1DD2B1 /* Pods-Tap Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Tracker.release.xcconfig"; path = "Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		6099F5AE27078EA500673EBD /* Tap Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6099F5B127078EA500673EBD /* Tap_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_TrackerApp.swift; sourceTree = "<group>"; };
 		6099F5B327078EA500673EBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +42,7 @@
 		7250A91027112EDD004C90D5 /* SessionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionData.swift; sourceTree = "<group>"; };
 		72F4F5302712808F00006E17 /* CategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCard.swift; sourceTree = "<group>"; };
 		72FE3609272CA76800B7E267 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Tap Tracker/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B903C9E69F41CE63850E6DB4 /* Pods-Tap Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,20 +50,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7FF41F550D26846D5113297 /* Pods_Tap_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EC58E6C10C59B7F4185DCDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B903C9E69F41CE63850E6DB4 /* Pods-Tap Tracker.debug.xcconfig */,
+				5638B77A004FBE19CB1DD2B1 /* Pods-Tap Tracker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6099F5A527078EA500673EBD = {
 			isa = PBXGroup;
 			children = (
 				6099F5B027078EA500673EBD /* Tap Tracker */,
 				6099F5AF27078EA500673EBD /* Products */,
-				E41CDF2D257DC6264EA592A0 /* Pods */,
 				90303C11EC64ADE9AE1B871D /* Frameworks */,
+				4EC58E6C10C59B7F4185DCDF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,18 +164,8 @@
 		90303C11EC64ADE9AE1B871D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5B69C225550EF37A1A1FB513 /* Pods_Tap_Tracker.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E41CDF2D257DC6264EA592A0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1EAB55D63F33AE749DD6D236 /* Pods-Tap Tracker.debug.xcconfig */,
-				3FBF93B2423EB2D5703F5B52 /* Pods-Tap Tracker.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +179,6 @@
 				6099F5AA27078EA500673EBD /* Sources */,
 				6099F5AB27078EA500673EBD /* Frameworks */,
 				6099F5AC27078EA500673EBD /* Resources */,
-				05DF5206F3ADD6EA1359FB4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,23 +236,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05DF5206F3ADD6EA1359FB4C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1E253AC3D1DF238D5410E81B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,7 +401,7 @@
 		};
 		6099F5BD27078EA700673EBD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EAB55D63F33AE749DD6D236 /* Pods-Tap Tracker.debug.xcconfig */;
+			baseConfigurationReference = B903C9E69F41CE63850E6DB4 /* Pods-Tap Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -453,7 +431,7 @@
 		};
 		6099F5BE27078EA700673EBD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FBF93B2423EB2D5703F5B52 /* Pods-Tap Tracker.release.xcconfig */;
+			baseConfigurationReference = 5638B77A004FBE19CB1DD2B1 /* Pods-Tap Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
