@@ -68,7 +68,6 @@ struct SessionCard: View {
                         NavigationLink(destination: CategoryCard(categories: session.categories)) {
                             Text("Category")
                         }
-//                        CategoryCard(name: "Category")
                     }
                 }
             }
