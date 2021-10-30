@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58596A60BA286A31EF25D0FA /* Pods_Tap_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89392CF68BBB05FCEA8EE848 /* Pods_Tap_Tracker.framework */; };
 		6099F5B227078EA500673EBD /* Tap_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099F5B127078EA500673EBD /* Tap_TrackerApp.swift */; };
 		6099F5B427078EA500673EBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099F5B327078EA500673EBD /* ContentView.swift */; };
 		6099F5B627078EA700673EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6099F5B527078EA700673EBD /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		7250A91027112EDD004C90D5 /* SessionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionData.swift; sourceTree = "<group>"; };
 		72F4F5302712808F00006E17 /* CategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCard.swift; sourceTree = "<group>"; };
 		72FE3609272CA76800B7E267 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Tap Tracker/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		89392CF68BBB05FCEA8EE848 /* Pods_Tap_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tap_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B903C9E69F41CE63850E6DB4 /* Pods-Tap Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58596A60BA286A31EF25D0FA /* Pods_Tap_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +167,7 @@
 		90303C11EC64ADE9AE1B871D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89392CF68BBB05FCEA8EE848 /* Pods_Tap_Tracker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,6 +183,7 @@
 				6099F5AA27078EA500673EBD /* Sources */,
 				6099F5AB27078EA500673EBD /* Frameworks */,
 				6099F5AC27078EA500673EBD /* Resources */,
+				FB876E54897D977B0A2635FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +261,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB876E54897D977B0A2635FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tap Tracker/Pods-Tap Tracker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
