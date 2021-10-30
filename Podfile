@@ -7,7 +7,6 @@ target 'Tap Tracker' do
 
   # Pods for Tap Tracker
   pod 'Firebase/Core'
-  pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift', '> 7.0-beta'  
