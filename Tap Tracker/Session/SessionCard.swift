@@ -30,7 +30,7 @@ struct SessionCard: View {
                     HStack {
                         Text("UUID")
                         Spacer()
-                        Text(session.id.uuidString)
+                        Text(session.id!)
                             .foregroundColor(Color.gray)
                             .frame(width: 200.0)
                     }

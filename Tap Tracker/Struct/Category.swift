@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import FirebaseFirestore
+import FirebaseFirestoreSwift
 
-struct Category {
+struct Category: Codable, Identifiable {
+    @DocumentID var id: String? = UUID().uuidString
     var CategoryTitle: String
     var Count: Int
 }
