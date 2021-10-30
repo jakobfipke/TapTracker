@@ -8,24 +8,39 @@
 import SwiftUI
 
 struct SessionsView: View {
+    @ObservedObject var sessionListViewModel = SessionListViewModel()
+    
     var body: some View {
         NavigationView {
-            List {
-                ForEach(sessions, id: \.id, content: {
-                    session in
-                    NavigationLink(
-                        destination: SessionCard(session: session)
-                    ) {
-                        Text(session.name)
-                        if (session.isRunning == true) {
-                            Spacer()
-                            Image(systemName: "play.circle.fill")
-                                .foregroundColor(Color.blue)
-                                .padding(.trailing, 20.0)
+            VStack {
+                List {
+                    ForEach(sessionListViewModel.sessionRowViewModels, id: \.id, content: {
+                        s in
+                        NavigationLink(
+                            destination: SessionCard(session: s.session)
+                        ) {
+                            Text(s.session.name)
+                            if (s.session.isRunning == true) {
+                                Spacer()
+                                Image(systemName: "play.circle.fill")
+                                    .foregroundColor(Color.blue)
+                                    .padding(.trailing, 20.0)
+                            }
                         }
-                    }
+                    })
+                }.navigationTitle("Sessions")
+                Button(action: {
+                    sessions.forEach({session in
+                        self.sessionListViewModel.addSession(session: session)
+                    })
+                }, label: {
+                   HStack {
+                      Image(systemName: "plus.circle.fill")
+                      Text("Add Sessions")
+                   }
                 })
-            }.navigationTitle("Sessions")
+                .padding()
+            }
         }
     }
 }
