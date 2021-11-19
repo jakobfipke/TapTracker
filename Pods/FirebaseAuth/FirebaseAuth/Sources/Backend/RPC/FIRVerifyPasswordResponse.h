@@ -66,7 +66,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, strong, readonly, nullable) NSURL *photoURL;
 
-<<<<<<< HEAD
 /** @property MFAPendingCredential
     @brief An opaque string that functions as proof that the user has successfully passed the first
    factor check.
@@ -76,10 +75,6 @@ NS_ASSUME_NONNULL_BEGIN
 /** @property MFAInfo
     @brief Info on which multi-factor authentication providers are enabled.
 */
-=======
-@property(nonatomic, strong, readonly, nullable) NSString *MFAPendingCredential;
-
->>>>>>> steven
 @property(nonatomic, strong, readonly, nullable) NSArray<FIRAuthProtoMFAEnrollment *> *MFAInfo;
 
 @end

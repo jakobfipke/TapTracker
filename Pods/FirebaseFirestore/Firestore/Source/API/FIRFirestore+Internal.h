@@ -20,11 +20,7 @@
 #include <string>
 
 #include "Firestore/core/src/api/firestore.h"
-<<<<<<< HEAD
 #include "Firestore/core/src/credentials/credentials_provider.h"
-=======
-#include "Firestore/core/src/auth/credentials_provider.h"
->>>>>>> steven
 #include "Firestore/core/src/util/async_queue.h"
 
 @class FIRApp;
@@ -40,16 +36,9 @@ class FirebaseMetadataProvider;
 }  // namespace firebase
 
 namespace api = firebase::firestore::api;
-<<<<<<< HEAD
 namespace credentials = firebase::firestore::credentials;
 namespace model = firebase::firestore::model;
 namespace remote = firebase::firestore::remote;
-=======
-namespace auth = firebase::firestore::auth;
-namespace model = firebase::firestore::model;
-namespace remote = firebase::firestore::remote;
-namespace util = firebase::firestore::util;
->>>>>>> steven
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -69,17 +58,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithDatabaseID:(model::DatabaseId)databaseID
                     persistenceKey:(std::string)persistenceKey
-<<<<<<< HEAD
            authCredentialsProvider:
                (std::shared_ptr<credentials::AuthCredentialsProvider>)authCredentialsProvider
        appCheckCredentialsProvider:
            (std::shared_ptr<credentials::AppCheckCredentialsProvider>)appCheckCredentialsProvider
                        workerQueue:
                            (std::shared_ptr<firebase::firestore::util::AsyncQueue>)workerQueue
-=======
-               credentialsProvider:(std::shared_ptr<auth::CredentialsProvider>)credentialsProvider
-                       workerQueue:(std::shared_ptr<util::AsyncQueue>)workerQueue
->>>>>>> steven
           firebaseMetadataProvider:
               (std::unique_ptr<remote::FirebaseMetadataProvider>)firebaseMetadataProvider
                        firebaseApp:(FIRApp *)app
@@ -93,11 +77,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)terminateInternalWithCompletion:(nullable void (^)(NSError *_Nullable error))completion;
 
-<<<<<<< HEAD
 - (const std::shared_ptr<firebase::firestore::util::AsyncQueue> &)workerQueue;
-=======
-- (const std::shared_ptr<util::AsyncQueue> &)workerQueue;
->>>>>>> steven
 
 @property(nonatomic, assign, readonly) std::shared_ptr<api::Firestore> wrapped;
 

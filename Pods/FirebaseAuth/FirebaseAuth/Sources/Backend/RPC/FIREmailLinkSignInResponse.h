@@ -16,10 +16,7 @@
 #import <Foundation/Foundation.h>
 
 #import "FirebaseAuth/Sources/Backend/FIRAuthRPCResponse.h"
-<<<<<<< HEAD
 #import "FirebaseAuth/Sources/Backend/RPC/Proto/FIRAuthProtoMFAEnrollment.h"
-=======
->>>>>>> steven
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -43,14 +40,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, strong, readonly, nullable) NSString *refreshToken;
 
-<<<<<<< HEAD
 /** @property localID
     @brief The Firebase Auth user ID.
  */
 @property(nonatomic, strong, readonly, nullable) NSString *localID;
 
-=======
->>>>>>> steven
 /** @property approximateExpirationDate
     @brief The approximate expiration date of the access token.
  */
@@ -61,7 +55,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, assign) BOOL isNewUser;
 
-<<<<<<< HEAD
 /** @property MFAPendingCredential
     @brief An opaque string that functions as proof that the user has successfully passed the first
    factor check.
@@ -73,8 +66,6 @@ NS_ASSUME_NONNULL_BEGIN
 */
 @property(nonatomic, strong, readonly, nullable) NSArray<FIRAuthProtoMFAEnrollment *> *MFAInfo;
 
-=======
->>>>>>> steven
 @end
 
 NS_ASSUME_NONNULL_END

@@ -28,14 +28,9 @@
 #include "Firestore/core/src/util/hashing.h"
 #include "Firestore/core/src/util/string_apple.h"
 
-<<<<<<< HEAD
 using firebase::firestore::model::FieldPath;
 using firebase::firestore::util::Hash;
 using firebase::firestore::util::MakeString;
-=======
-namespace util = firebase::firestore::util;
-using firebase::firestore::model::FieldPath;
->>>>>>> steven
 using firebase::firestore::util::ThrowInvalidArgument;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -57,11 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
   std::vector<std::string> converted;
   converted.reserve(fieldNames.count);
   for (NSString *fieldName in fieldNames) {
-<<<<<<< HEAD
     converted.emplace_back(MakeString(fieldName));
-=======
-    converted.emplace_back(util::MakeString(fieldName));
->>>>>>> steven
   }
 
   return [self initPrivate:FieldPath::FromSegments(std::move(converted))];
@@ -79,12 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 + (instancetype)pathWithDotSeparatedString:(NSString *)path {
-<<<<<<< HEAD
   return [[FIRFieldPath alloc] initPrivate:FieldPath::FromDotSeparatedString(MakeString(path))];
-=======
-  return
-      [[FIRFieldPath alloc] initPrivate:FieldPath::FromDotSeparatedString(util::MakeString(path))];
->>>>>>> steven
 }
 
 - (id)copyWithZone:(__unused NSZone *_Nullable)zone {
@@ -104,11 +90,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (NSUInteger)hash {
-<<<<<<< HEAD
   return Hash(_internalValue);
-=======
-  return util::Hash(_internalValue);
->>>>>>> steven
 }
 
 - (const firebase::firestore::model::FieldPath &)internalValue {

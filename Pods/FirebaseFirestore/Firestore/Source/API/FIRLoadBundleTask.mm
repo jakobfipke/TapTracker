@@ -36,15 +36,9 @@ using firebase::firestore::util::ThrowInvalidArgument;
 
 - (instancetype)initWithInternal:(api::LoadBundleTaskProgress)progress {
   if (self = [super init]) {
-<<<<<<< HEAD
     _bytesLoaded = (NSInteger)progress.bytes_loaded();
     _documentsLoaded = progress.documents_loaded();
     _totalBytes = (NSInteger)progress.total_bytes();
-=======
-    _bytesLoaded = progress.bytes_loaded();
-    _documentsLoaded = progress.documents_loaded();
-    _totalBytes = progress.total_bytes();
->>>>>>> steven
     _totalDocuments = progress.total_documents();
 
     switch (progress.state()) {
@@ -98,11 +92,7 @@ using firebase::firestore::util::ThrowInvalidArgument;
       [observer](api::LoadBundleTaskProgress internal_progress) {
         observer([[FIRLoadBundleTaskProgress alloc] initWithInternal:internal_progress]);
       };
-<<<<<<< HEAD
   return (FIRLoadBundleObserverHandle)_task->Observe(std::move(core_observer));
-=======
-  return _task->Observe(std::move(core_observer));
->>>>>>> steven
 }
 
 - (void)removeObserverWithHandle:(FIRLoadBundleObserverHandle)handle {
