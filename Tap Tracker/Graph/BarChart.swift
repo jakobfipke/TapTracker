@@ -13,9 +13,7 @@ struct BarChart : UIViewRepresentable {
     var entries : [BarChartDataEntry]
     // this func is required to conform to UIViewRepresentable protocol
     func makeUIView(context: Context) -> BarChartView {
-        //crate new chart
         let chart = BarChartView()
-        //it is convenient to form chart data in a separate func
         chart.data = addData()
         return chart
     }
