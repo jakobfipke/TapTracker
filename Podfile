@@ -7,6 +7,7 @@ target 'Tap Tracker' do
   use_frameworks!
 
   # Pods for Tap Tracker
+  pod 'Charts'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
