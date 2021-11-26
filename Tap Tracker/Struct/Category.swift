@@ -13,5 +13,4 @@ struct Category: Codable, Identifiable {
     @DocumentID var id: String? = UUID().uuidString
     var CategoryTitle: String
     var Count: Int
-    @ServerTimestamp var createdTime: Timestamp?
 }

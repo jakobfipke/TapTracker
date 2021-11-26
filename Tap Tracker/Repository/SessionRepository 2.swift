@@ -19,20 +19,21 @@ class SessionRepository: ObservableObject {
     }
     
     func loadData() {
-         db.collection("sessions")
-             .addSnapshotListener {(querySnapshot, error) in
-                 if let querySnapshot = querySnapshot {
-                     self.sessions = querySnapshot.documents.compactMap { document in
-                         do {
-                             let x = try document.data(as: Session.self)
-                             return x
-                         } catch {
-                             print(error)
-                         }
-                         return nil
-                     }
-                 }
+       db.collection("sessions")
+          .order(by: "createdTime")
+          .addSnapshotListener {(querySnapshot, error) in
+          if let querySnapshot = querySnapshot {
+             self.sessions = querySnapshot.documents.compactMap { document in
+                do {
+                    let x = try document.data(as: Session.self)
+                   return x
+                } catch {
+                   print(error)
+                }
+                return nil
              }
+          }
+       }
     }
 
     

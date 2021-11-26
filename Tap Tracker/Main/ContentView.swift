@@ -9,28 +9,21 @@ import SwiftUI
 
 
 
-
 struct ContentView: View {
+    @EnvironmentObject var authViewModel: AuthenticationViewModel
+
     var body: some View {
-        TabView {
-            SessionsView()
-            .tabItem {
-                Image(systemName: "list.bullet.rectangle")
-                Text("Sessions")
-            }
-            // Tap View
-            TapView()
-            .tabItem {
-                Image(systemName: "hand.tap")
-                Text("Tap")
-            }
-            GraphView()
-            .tabItem {
-                Image(systemName: "chart.bar.xaxis")
-                Text("Graph")
-            }
-            
+      return Group {
+        NavigationView {
+          switch authViewModel.state {
+          case .signedIn:
+            MainView()
+          case .signedOut:
+            SignInView()
+          }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+      }
     }
 }
 
