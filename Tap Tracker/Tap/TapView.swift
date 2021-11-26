@@ -10,6 +10,7 @@ import SwiftUI
 let running = false
 
 struct TapView: View {
+    @State var category: Int
     var body: some View {
         VStack {
             Group {
@@ -71,6 +72,6 @@ struct TapView: View {
 
 struct TapView_Previews: PreviewProvider {
     static var previews: some View {
-        TapView()
+        TapView(category: 1)
     }
 }
