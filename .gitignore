@@ -90,4 +90,6 @@ fastlane/test_output
 iOSInjectionProject/
 
 
-
+# cause git conflict
+Tap Tracker.xcodeproj/xcuserdata/dohunkim.xcuserdatad/xcschemes/xcschememanagement.plist
+Tap Tracker.xcodeproj/project.pbxproj
