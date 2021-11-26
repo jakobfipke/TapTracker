@@ -15,8 +15,26 @@ class SessionRepository: ObservableObject {
     @Published var sessions = [Session]()
     
     init() {
-        
+        loadData()
     }
+    
+    func loadData() {
+         db.collection("sessions")
+             .addSnapshotListener {(querySnapshot, error) in
+                 if let querySnapshot = querySnapshot {
+                     self.sessions = querySnapshot.documents.compactMap { document in
+                         do {
+                             let x = try document.data(as: Session.self)
+                             return x
+                         } catch {
+                             print(error)
+                         }
+                         return nil
+                     }
+                 }
+             }
+    }
+
     
     func addSession(_ session: Session) {
         do {

@@ -28,7 +28,8 @@ struct SessionsView: View {
                             }
                         }
                     })
-                }.navigationTitle("Sessions")
+                }
+                .onAppear()
                 Button(action: {
                     sessions.forEach({session in
                         self.sessionListViewModel.addSession(session: session)
@@ -41,6 +42,7 @@ struct SessionsView: View {
                 })
                 .padding()
             }
+            
         }
     }
 }

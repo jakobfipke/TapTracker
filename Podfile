@@ -10,6 +10,7 @@ target 'Tap Tracker' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
-  pod 'FirebaseFirestoreSwift', '> 7.0-beta'  
+  pod 'FirebaseFirestoreSwift', '> 7.0-beta'
+  pod 'GoogleSignIn'
   
 end

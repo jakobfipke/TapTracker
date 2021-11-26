@@ -20,3 +20,4 @@ struct Session: Codable, Identifiable {
     @ServerTimestamp var createdTime: Timestamp?
 }
 
+
