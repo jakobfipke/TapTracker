@@ -8,8 +8,12 @@
 import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
+import GoogleSignIn
 
 class SessionRepository: ObservableObject {
+    private var user: GIDGoogleUser? {
+      return GIDSignIn.sharedInstance.currentUser
+    }
     let db = Firestore.firestore()
     
     @Published var sessions = [Session]()
@@ -19,22 +23,25 @@ class SessionRepository: ObservableObject {
     }
     
     func loadData() {
-         db.collection("sessions")
-             .addSnapshotListener {(querySnapshot, error) in
-                 if let querySnapshot = querySnapshot {
-                     self.sessions = querySnapshot.documents.compactMap { document in
-                         do {
-                             let x = try document.data(as: Session.self)
-                             return x
-                         } catch {
-                             print(error)
-                         }
-                         return nil
-                     }
-                 }
-             }
+        if let ID = user?.userID {
+            db.collection("sessions")
+                .whereField("userId", isEqualTo: ID)
+                .addSnapshotListener {(querySnapshot, error) in
+                    if let querySnapshot = querySnapshot {
+                        self.sessions = querySnapshot.documents.compactMap { document in
+                            do {
+                                let x = try document.data(as: Session.self)
+                                return x
+                            } catch {
+                                print(error)
+                            }
+                            return nil
+                        }
+                    }
+                }
+        }
     }
-
+    
     
     func addSession(_ session: Session) {
         do {
@@ -50,6 +57,16 @@ class SessionRepository: ObservableObject {
                 let _ = try db.collection("sessions").document(sessionId).setData(from: session)
             } catch {
                 fatalError("Unable to encode session: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func deleteSession(_ session: Session) {
+        if let ID = session.id {
+            db.collection("sessions").document(ID).delete() { err in
+                if let err = err {
+                    fatalError("Unable to delete task: \(err.localizedDescription)")
+                }
             }
         }
     }

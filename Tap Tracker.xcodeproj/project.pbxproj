@@ -14,6 +14,8 @@
 		605C1ED5272CA3520088544D /* SessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C1ED4272CA3520088544D /* SessionRepository.swift */; };
 		6062E072272CD39D00F45039 /* SessionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6062E071272CD39D00F45039 /* SessionListViewModel.swift */; };
 		6062E074272CD47400F45039 /* SessionRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6062E073272CD47400F45039 /* SessionRowViewModel.swift */; };
+		606332B12751C26B00F2828F /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606332B02751C26B00F2828F /* CategoryRepository.swift */; };
+		606332B32751CF8200F2828F /* SessionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606332B22751CF8200F2828F /* SessionDetailsView.swift */; };
 		6099F5B227078EA500673EBD /* Tap_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099F5B127078EA500673EBD /* Tap_TrackerApp.swift */; };
 		6099F5B427078EA500673EBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099F5B327078EA500673EBD /* ContentView.swift */; };
 		6099F5B627078EA700673EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6099F5B527078EA700673EBD /* Assets.xcassets */; };
@@ -22,6 +24,10 @@
 		609F2D8227516BD2009020DE /* GoogleSignInButtonWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609F2D8127516BD2009020DE /* GoogleSignInButtonWrapper.swift */; };
 		609F2D8427516C1A009020DE /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609F2D8327516C1A009020DE /* SignInView.swift */; };
 		609F2D8627516C78009020DE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609F2D8527516C78009020DE /* MainView.swift */; };
+		609F2D88275191CE009020DE /* EditSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609F2D87275191CE009020DE /* EditSessionView.swift */; };
+		609F2D8C27519CC4009020DE /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609F2D8B27519CC4009020DE /* CategoryListViewModel.swift */; };
+		609F2D8E27519D18009020DE /* CategoryRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609F2D8D27519D18009020DE /* CategoryRowViewModel.swift */; };
+		609F2D9027519F63009020DE /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609F2D8F27519F63009020DE /* CategoryRow.swift */; };
 		60AAF4B12710D31300AD6A03 /* SessionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AAF4B02710D31300AD6A03 /* SessionsView.swift */; };
 		60AAF4B32710D32000AD6A03 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AAF4B22710D32000AD6A03 /* GraphView.swift */; };
 		60AAF4B72710D46700AD6A03 /* TapPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AAF4B62710D46700AD6A03 /* TapPane.swift */; };
@@ -44,6 +50,8 @@
 		605C1ED4272CA3520088544D /* SessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRepository.swift; sourceTree = "<group>"; };
 		6062E071272CD39D00F45039 /* SessionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionListViewModel.swift; sourceTree = "<group>"; };
 		6062E073272CD47400F45039 /* SessionRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRowViewModel.swift; sourceTree = "<group>"; };
+		606332B02751C26B00F2828F /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		606332B22751CF8200F2828F /* SessionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailsView.swift; sourceTree = "<group>"; };
 		6099F5AE27078EA500673EBD /* Tap Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6099F5B127078EA500673EBD /* Tap_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_TrackerApp.swift; sourceTree = "<group>"; };
 		6099F5B327078EA500673EBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +61,10 @@
 		609F2D8127516BD2009020DE /* GoogleSignInButtonWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButtonWrapper.swift; sourceTree = "<group>"; };
 		609F2D8327516C1A009020DE /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		609F2D8527516C78009020DE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		609F2D87275191CE009020DE /* EditSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSessionView.swift; sourceTree = "<group>"; };
+		609F2D8B27519CC4009020DE /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
+		609F2D8D27519D18009020DE /* CategoryRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRowViewModel.swift; sourceTree = "<group>"; };
+		609F2D8F27519F63009020DE /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		60AAF4B02710D31300AD6A03 /* SessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsView.swift; sourceTree = "<group>"; };
 		60AAF4B22710D32000AD6A03 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		60AAF4B62710D46700AD6A03 /* TapPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapPane.swift; sourceTree = "<group>"; };
@@ -114,6 +126,9 @@
 			children = (
 				6062E071272CD39D00F45039 /* SessionListViewModel.swift */,
 				6062E073272CD47400F45039 /* SessionRowViewModel.swift */,
+				609F2D8B27519CC4009020DE /* CategoryListViewModel.swift */,
+				609F2D8D27519D18009020DE /* CategoryRowViewModel.swift */,
+				606332B02751C26B00F2828F /* CategoryRepository.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -229,6 +244,9 @@
 				60AAF4B02710D31300AD6A03 /* SessionsView.swift */,
 				60AAF4BC2710EFA100AD6A03 /* SessionCard.swift */,
 				72F4F5302712808F00006E17 /* CategoryCard.swift */,
+				609F2D87275191CE009020DE /* EditSessionView.swift */,
+				609F2D8F27519F63009020DE /* CategoryRow.swift */,
+				606332B22751CF8200F2828F /* SessionDetailsView.swift */,
 			);
 			path = Session;
 			sourceTree = "<group>";
@@ -360,28 +378,34 @@
 				7250A91127112EDD004C90D5 /* SessionData.swift in Sources */,
 				605C1ED5272CA3520088544D /* SessionRepository.swift in Sources */,
 				60AAF4BB2710EF1400AD6A03 /* Session.swift in Sources */,
+				606332B12751C26B00F2828F /* CategoryRepository.swift in Sources */,
 				609F2D8027516B7A009020DE /* GoogleSignInAuthenticator.swift in Sources */,
 				7250A90F27112ECF004C90D5 /* CategoryData.swift in Sources */,
 				60B6C30627433B4300D70A26 /* AccountView.swift in Sources */,
 				1614605A27485FCB00E9D0C7 /* BarChart.swift in Sources */,
+				609F2D8E27519D18009020DE /* CategoryRowViewModel.swift in Sources */,
 				7250A90F27112ECF004C90D5 /* CategoryData.swift in Sources */,
 				1614605827485FBA00E9D0C7 /* LineChart.swift in Sources */,
 				60AAF4B72710D46700AD6A03 /* TapPane.swift in Sources */,
 				609F2D8627516C78009020DE /* MainView.swift in Sources */,
 				60D23082274854200078635F /* AuthenticationViewModel.swift in Sources */,
 				609F2D8227516BD2009020DE /* GoogleSignInButtonWrapper.swift in Sources */,
+				606332B32751CF8200F2828F /* SessionDetailsView.swift in Sources */,
 				60AAF4BD2710EFA100AD6A03 /* SessionCard.swift in Sources */,
 				6099F5B427078EA500673EBD /* ContentView.swift in Sources */,
+				609F2D9027519F63009020DE /* CategoryRow.swift in Sources */,
 				60AAF4B12710D31300AD6A03 /* SessionsView.swift in Sources */,
 				7250A9082710FA6D004C90D5 /* Category.swift in Sources */,
 				6062E072272CD39D00F45039 /* SessionListViewModel.swift in Sources */,
 				6062E074272CD47400F45039 /* SessionRowViewModel.swift in Sources */,
 				609F2D8427516C1A009020DE /* SignInView.swift in Sources */,
+				609F2D88275191CE009020DE /* EditSessionView.swift in Sources */,
 				60B6C30B2743529E00D70A26 /* SessionStore.swift in Sources */,
 				6099F5B227078EA500673EBD /* Tap_TrackerApp.swift in Sources */,
 				72F4F5312712808F00006E17 /* CategoryCard.swift in Sources */,
 				60AAF4B32710D32000AD6A03 /* GraphView.swift in Sources */,
 				60AAF4B92710D4CD00AD6A03 /* TapView.swift in Sources */,
+				609F2D8C27519CC4009020DE /* CategoryListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

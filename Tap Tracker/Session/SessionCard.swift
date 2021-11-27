@@ -27,13 +27,13 @@ struct SessionCard: View {
                     Text(session.name)
                 }.font(.title3))
                 {
-                    HStack {
-                        Text("UUID")
-                        Spacer()
-                        Text(session.id!)
-                            .foregroundColor(Color.gray)
-                            .frame(width: 200.0)
-                    }
+//                    HStack {
+//                        Text("UUID")
+//                        Spacer()
+//                        Text(session.id!)
+//                            .foregroundColor(Color.gray)
+//                            .frame(width: 200.0)
+//                    }
                     HStack {
                         Text("Session Name")
                         Spacer()

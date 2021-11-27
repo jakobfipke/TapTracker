@@ -14,33 +14,56 @@ struct SessionsView: View {
         NavigationView {
             VStack {
                 List {
-                    ForEach(sessionListViewModel.sessionRowViewModels, id: \.id, content: {
-                        s in
-                        NavigationLink(
-                            destination: SessionCard(session: s.session)
-                        ) {
-                            Text(s.session.name)
-                            if (s.session.isRunning == true) {
+                    Section(header: Text("Sessions")) {
+                        ForEach(sessionListViewModel.sessionRowViewModels, id: \.id, content: {
+                            s in
+                            NavigationLink(
+                                destination: SessionDetailsView(session: s.session)
+                            ) {
+                                Text(s.session.name)
+                                if (s.session.isRunning == true) {
+                                    Spacer()
+                                    Image(systemName: "play.circle.fill")
+                                        .foregroundColor(Color.blue)
+                                        .padding(.trailing, 20.0)
+                                }
+                            }
+                        })
+                        .onDelete(perform: { indexSet in
+                            indexSet.forEach({ index in
+                                self.sessionListViewModel.deleteSession(session: self.sessionListViewModel.sessionRowViewModels[index].session)
+                            })
+                        })
+                    }
+//                    Section {
+                        Button(action: {
+                            self.sessionListViewModel.addSession(session: NewSession)
+                        }, label: {
+                            
+                            HStack {
+                                Text("Create New Session")
                                 Spacer()
-                                Image(systemName: "play.circle.fill")
+                                Image(systemName: "plus.circle.fill")
                                     .foregroundColor(Color.blue)
                                     .padding(.trailing, 20.0)
                             }
-                        }
-                    })
+                            
+                        })
+//                    }
                 }
-                .onAppear()
-                Button(action: {
-                    sessions.forEach({session in
-                        self.sessionListViewModel.addSession(session: session)
-                    })
-                }, label: {
-                   HStack {
-                      Image(systemName: "plus.circle.fill")
-                      Text("Add Sessions")
-                   }
-                })
-                .padding()
+                
+                
+//                NavigationLink(
+//                    destination: NewSessionView()
+//                    
+//                ) {
+//                    Text("Create New Session")
+//                    Spacer()
+//                    Image(systemName: "plus.circle.fill")
+//                        .foregroundColor(Color.blue)
+//                        .padding(.trailing, 20.0)
+//                    
+//                }.padding()
             }
             
         }

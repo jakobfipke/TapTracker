@@ -11,6 +11,7 @@ import FirebaseFirestoreSwift
 
 struct Session: Codable, Identifiable {
     @DocumentID var id: String? = UUID().uuidString
+    var userId: String
     var name: String
     var description: String
     var date: Date

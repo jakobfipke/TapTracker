@@ -32,7 +32,7 @@ class SessionListViewModel: ObservableObject {
         sessionRepository.addSession(session)
     }
     
-//    func deleteSession(session: Session) {
-//        sessionRepository.deleteSession(session)
-//    }
+    func deleteSession(session: Session) {
+        sessionRepository.deleteSession(session)
+    }
 }
