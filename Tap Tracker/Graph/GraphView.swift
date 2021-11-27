@@ -30,15 +30,25 @@ var lineEntries = [ChartDataEntry(x: 1, y: 1),
                    ChartDataEntry(x: 5, y: 5)]
 
 func getStuff() {
-    sessionRef.getDocuments() { (docs, err) in
-        if let documents = docs {
-            documents.documents.forEach { doc in
-                print(doc.documentID)
-            }
-        } else {
-            print("Document does not exist: \(String(describing: err))")
-        }
-    }
+//    sessionRef.getDocuments() { (docs, err) in
+//        if let documents = docs {
+//            documents.documents.forEach { doc in
+//                print(doc.documentID)
+//                print(doc.data().values)
+//            }
+//        } else {
+//            print("Document does not exist: \(String(describing: err))")
+//        }
+//    }
+    
+//    mySession.get { (document, err) in
+//        if let document = document, document.exists {
+//            let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+//            print("Document data: \(dataDescription)")
+//        } else {
+//            print("Document does not exist")
+//        }
+//    }
 }
 
 struct GraphView: View {
