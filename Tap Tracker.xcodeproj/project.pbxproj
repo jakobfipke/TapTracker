@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1614605827485FBA00E9D0C7 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1614605727485FBA00E9D0C7 /* LineChart.swift */; };
 		1614605A27485FCB00E9D0C7 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1614605927485FCB00E9D0C7 /* BarChart.swift */; };
+		1631EC3D2751C73700FF4415 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1631EC3C2751C73700FF4415 /* GoogleService-Info.plist */; };
 		3A4D563173A46317A7666306 /* Pods_Tap_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5CDC86D65F3981D47B15F5 /* Pods_Tap_Tracker.framework */; };
 		601F01B12759DCBC0074E758 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 601F01B02759DCBC0074E758 /* GoogleService-Info.plist */; };
 		605C1ED5272CA3520088544D /* SessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C1ED4272CA3520088544D /* SessionRepository.swift */; };
@@ -306,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6099F5B927078EA700673EBD /* Preview Assets.xcassets in Resources */,
+				1631EC3D2751C73700FF4415 /* GoogleService-Info.plist in Resources */,
 				6099F5B627078EA700673EBD /* Assets.xcassets in Resources */,
 				601F01B12759DCBC0074E758 /* GoogleService-Info.plist in Resources */,
 			);

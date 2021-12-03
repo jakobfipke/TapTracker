@@ -20,7 +20,6 @@ struct CategoryCard: View {
                         // TODO: PRINT COUNT FOR EACH CATEGORY HERE
                         Text(String(category.Count))
                     }
-                    
                 })
             }
         }
