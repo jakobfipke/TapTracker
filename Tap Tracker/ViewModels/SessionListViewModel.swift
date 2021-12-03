@@ -35,4 +35,5 @@ class SessionListViewModel: ObservableObject {
     func deleteSession(session: Session) {
         sessionRepository.deleteSession(session)
     }
+
 }

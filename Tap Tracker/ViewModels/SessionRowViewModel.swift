@@ -36,5 +36,9 @@ class SessionRowViewModel: ObservableObject, Identifiable {
             .store(in: &cancellables)
 
     }
+    
+    func updateSession(session: Session) {
+        sessionRepo.updateSession(session)
+    }
 }
 

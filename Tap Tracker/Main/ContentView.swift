@@ -11,6 +11,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var authViewModel: AuthenticationViewModel
+    @EnvironmentObject var session: SessionRowViewModel
 
     var body: some View {
       return Group {

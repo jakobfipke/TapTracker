@@ -48,6 +48,9 @@ final class GoogleSignInAuthenticator: ObservableObject {
             
             Auth.auth().signIn(with: credential)
             self.authViewModel.state = .signedIn(user)
+                       
+            
+            
         }
         
         

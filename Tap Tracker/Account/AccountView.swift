@@ -8,55 +8,13 @@
 import SwiftUI
 import Firebase
 import GoogleSignIn
-//import FirebaseAuthUI
-//import FirebaseEmailAuthUI
-
-//struct SignInButton: UIViewRepresentable {
-//
-//    func makeUIView(context: Context) -> GIDSignInButton {
-//        return GIDSignInButton()
-//    }
-//
-//    func updateUIView(_ uiView: UIViewType, context: Context) {}
-//}
 
 struct AccountView: View {
     @EnvironmentObject var authViewModel: AuthenticationViewModel
     private var user: GIDGoogleUser? {
       return GIDSignIn.sharedInstance.currentUser
     }
-//    @State var email: String = ""
-//    @State var password: String = ""
-//    @State var loading = false
-//    @State var error = false
-    
-//    @ObservedObject var userSession: SessionStore
-    
-//    func getUser() {
-//        userSession.listen()
-//    }
-//
-//    func signInEmail () {
-//        loading = true
-//        error = false
-//        userSession.signIn(email: email, password: password) { (result, error) in
-//            self.loading = false
-//            if error != nil {
-//                self.error = true
-//            } else {
-//                self.email = ""
-//                self.password = ""
-//            }
-//        }
-//    }
-//
-//    func signInGoogle(sender: Any) {
-//      GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: UIViewController()) { user, error in
-//        guard error == nil else { return }
-//
-//        // If sign in succeeded, display the app's main content View.
-//      }
-//    }
+
     
     var body: some View {
         return Group {
@@ -81,27 +39,6 @@ struct AccountView: View {
               .accessibilityLabel(Text("Failed to get user profile"))
           }
         }
-//        VStack {
-//            if (userSession.session != nil) {
-//                Text(Auth.auth().currentUser?.uid ?? "")
-//            } else {
-//                VStack {
-//                    TextField("Email", text: $email)
-//                    SecureField("Password", text: $password)
-//                    if (error) {
-//                        Text("ahhh crap")
-//                    }
-//                    Button(action: signInEmail) {
-//                        Text("Sign in")
-//                    }
-////                    SignInButton().onTapGesture {
-////                        signInGoogle(sender: "ME")
-////                    }
-//                }
-//            }
-//
-////            AccountViewController()
-//        }.onAppear(perform: getUser)
         
     }
     

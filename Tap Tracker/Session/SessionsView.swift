@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import GoogleSignIn
 
 struct SessionsView: View {
     @ObservedObject var sessionListViewModel = SessionListViewModel()
-    
+    private var user: GIDGoogleUser? {
+      return GIDSignIn.sharedInstance.currentUser
+    }
     var body: some View {
         NavigationView {
             VStack {
@@ -18,7 +21,7 @@ struct SessionsView: View {
                         ForEach(sessionListViewModel.sessionRowViewModels, id: \.id, content: {
                             s in
                             NavigationLink(
-                                destination: SessionDetailsView(session: s.session)
+                                destination: SessionDetailsView(session: s.session, sessionRowViewModel: s)
                             ) {
                                 Text(s.session.name)
                                 if (s.session.isRunning == true) {
@@ -37,7 +40,7 @@ struct SessionsView: View {
                     }
 //                    Section {
                         Button(action: {
-                            self.sessionListViewModel.addSession(session: NewSession)
+                            self.sessionListViewModel.addSession(session: Session(userId: GIDSignIn.sharedInstance.currentUser?.userID ?? "no", name: "New Session", description: "", date: Date(), location: "Vancouver", isRunning: false, categories: [Category(CategoryTitle: "Category 1", Count: 0), Category(CategoryTitle: "Category 2", Count: 0),Category(CategoryTitle: "Category 3", Count: 0),Category(CategoryTitle: "Category 4", Count: 0)]))
                         }, label: {
                             
                             HStack {

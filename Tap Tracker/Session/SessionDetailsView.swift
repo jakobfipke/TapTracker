@@ -15,6 +15,7 @@ enum SessionDetailsViewType {
 struct SessionDetailsView: View {
     @State var viewType: SessionDetailsViewType = .details
     @State var session: Session
+    @State var sessionRowViewModel: SessionRowViewModel
     
     var body: some View {
         VStack {
@@ -22,11 +23,10 @@ struct SessionDetailsView: View {
             case .details:
                 SessionCard(session: session)
             case .edit:
-                EditSessionView()
+                EditSessionView(sessionRowViewModel: sessionRowViewModel)
             }
             
-            
-            VStack {
+            Group {
                 switch viewType {
                 case .details:
                     Button(action: {
@@ -36,28 +36,26 @@ struct SessionDetailsView: View {
                             Text("Edit")
                             Spacer()
                             Image(systemName: "pencil.circle")
-                                .foregroundColor(Color.blue)
+                                .foregroundColor(Color.white)
                                 .padding(.trailing, 20.0)
                         }
                     }
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(8)
                 case .edit:
-                    Button(action: {
-                        self.viewType = .details
-                    }) {
-                        Text("Save")
-                    }
+                    EmptyView()
                 }
-                
-            }.padding(.all)
-            Spacer()
+            }.padding()
         }
         
         
     }
 }
 
-struct SessionDetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SessionDetailsView(session: SessionRestaurant)
-    }
-}
+//struct SessionDetailsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SessionDetailsView(session: SessionRestaurant, sessionRowViewModel: SessionRowViewModel(SessionRestaurant))
+//    }
+//}

@@ -17,4 +17,4 @@ let SessionRestaurant = Session(userId: GIDSignIn.sharedInstance.currentUser?.us
 
 let SessionArena = Session(userId: GIDSignIn.sharedInstance.currentUser?.userID ?? "test", name: "Arena", description: "Arena Desc", date: Date(), location: "Vancouver", isRunning: true, categories: CateArrArena)
 
-let NewSession = Session(userId: GIDSignIn.sharedInstance.currentUser?.userID ?? "no", name: "New Session", description: "", date: Date(), location: "", isRunning: false, categories: [Category]())
+let NewSession = Session(userId: GIDSignIn.sharedInstance.currentUser?.userID ?? "no", name: "New Session", description: "", date: Date(), location: "Vancouver", isRunning: false, categories: [Category(CategoryTitle: "Category 1", Count: 0), Category(CategoryTitle: "Category 2", Count: 0),Category(CategoryTitle: "Category 3", Count: 0),Category(CategoryTitle: "Category 4", Count: 0)])
