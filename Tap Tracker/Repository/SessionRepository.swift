@@ -39,6 +39,7 @@ class SessionRepository: ObservableObject {
     func addSession(_ session: Session) {
         do {
             let _ = try db.collection("sessions").document(session.id!).setData(from: session)
+//            let _ = try db.collection("sessions").addDocument(from: session)
         } catch {
             fatalError("Unable to encode session: \(error.localizedDescription)")
         }
